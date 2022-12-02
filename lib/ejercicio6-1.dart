@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import 'NavDrawer.dart';
@@ -29,9 +31,28 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Challenge")),
-      body: Container(child: Text("H")),
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        margin: EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(300)),
+          border: Border.all(
+            color: Colors.orange,
+            width: 5,
+          ),
+        ),
+        width: 200,
+        height: 200,
+        alignment: Alignment.center,
+        child: Text(
+          'H',
+          style: TextStyle(
+            fontSize: 100,
+            color: Colors.orange,
+          ),
+        ),
+      ),
     );
   }
 }

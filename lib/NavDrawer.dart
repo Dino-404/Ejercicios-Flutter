@@ -49,6 +49,16 @@ class NavDrawer extends StatelessWidget {
             title: Text('Quinto ejercicio'),
             onTap: () => {Navigator.pushNamed(context, "/cinco")},
           ),
+          ListTile(
+            leading: Icon(Icons.android_rounded),
+            title: Text('Sexto ejercicio'),
+            onTap: () => {Navigator.pushNamed(context, "/seis")},
+          ),
+          ListTile(
+            leading: Icon(Icons.android_rounded),
+            title: Text('Sexto 2 ejercicio'),
+            onTap: () => {Navigator.pushNamed(context, "/seis2")},
+          ),
         ],
       ),
     );

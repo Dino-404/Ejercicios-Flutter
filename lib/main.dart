@@ -4,9 +4,11 @@ import 'package:proyectito/ejercicio1.dart';
 import 'package:proyectito/ejercicio2.dart';
 import 'package:proyectito/ejercicio3.dart';
 import 'package:proyectito/ejercicio5.dart';
+import 'package:proyectito/ejercicio6-1.dart';
 
 import 'NavDrawer.dart';
 import 'ejercicio4.dart';
+import 'ejercicio6-2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,6 +30,8 @@ class MyApp extends StatelessWidget {
         "/tres": (context) => const ThirdRoute(),
         "/cuatro": (context) => const FourthRoute(),
         "/cinco": (context) => const FifthRoute(),
+        "/seis": (context) => const SixthRoute(),
+        "/seis2": (context) => const Sixth2Route(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
