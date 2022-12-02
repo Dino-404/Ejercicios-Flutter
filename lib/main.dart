@@ -1,10 +1,13 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:proyectito/ejercicio1.dart';
 import 'package:proyectito/ejercicio2.dart';
 import 'package:proyectito/ejercicio3.dart';
 import 'package:proyectito/ejercicio5.dart';
 import 'package:proyectito/ejercicio6-1.dart';
+import 'package:proyectito/ejercicio7.dart';
+import 'package:proyectito/ejercicio8.dart';
 
 import 'NavDrawer.dart';
 import 'ejercicio4.dart';
@@ -32,6 +35,8 @@ class MyApp extends StatelessWidget {
         "/cinco": (context) => const FifthRoute(),
         "/seis": (context) => const SixthRoute(),
         "/seis2": (context) => const Sixth2Route(),
+        "/siete": (context) => const SeventhRoute(),
+        "/ocho": (context) => const EighthRoute(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -44,22 +49,12 @@ class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       drawer: NavDrawer(),
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
         title: Text("Welcome"),
       ),
       body: Center(
-          // Center is a layout widget. It takes a single child and positions it
-          // in the middle of the parent.
           child: Padding(
         padding: EdgeInsets.all(30.0),
         child: Text(

@@ -1,11 +1,9 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, file_names
+
 import 'package:flutter/material.dart';
 
-import 'NavDrawer.dart';
-
 class ContainerPersonalizado {
-  /**
-   * Creador de container, se tiene que insetar alineacion y padding
-   */
+  // ignore: non_constant_identifier_names
   static Widget CreatecontainerContainer(Alignment alignment, double padding) {
     return Container(
         alignment: alignment,

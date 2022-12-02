@@ -1,8 +1,10 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, file_names
 
 import 'package:flutter/material.dart';
 
 class NavDrawer extends StatelessWidget {
+  const NavDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -58,6 +60,16 @@ class NavDrawer extends StatelessWidget {
             leading: Icon(Icons.android_rounded),
             title: Text('Sexto 2 ejercicio'),
             onTap: () => {Navigator.pushNamed(context, "/seis2")},
+          ),
+          ListTile(
+            leading: Icon(Icons.android_rounded),
+            title: Text('Septimo ejercicio'),
+            onTap: () => {Navigator.pushNamed(context, "/siete")},
+          ),
+          ListTile(
+            leading: Icon(Icons.android_rounded),
+            title: Text('Octavo ejercicio'),
+            onTap: () => {Navigator.pushNamed(context, "/ocho")},
           ),
         ],
       ),
