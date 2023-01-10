@@ -60,7 +60,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   fonts:
-    - family: Open Sans
+    - family: OpenSans
       fonts:
         - asset: fonts/OpenSans-Regular.ttf
         - asset: fonts/OpenSans-Bold.ttf

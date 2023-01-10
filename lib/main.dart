@@ -2,12 +2,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:proyectito/ejercicio1.dart';
+import 'package:proyectito/ejercicio10.dart';
+import 'package:proyectito/ejercicio11.dart';
 import 'package:proyectito/ejercicio2.dart';
 import 'package:proyectito/ejercicio3.dart';
 import 'package:proyectito/ejercicio5.dart';
 import 'package:proyectito/ejercicio6-1.dart';
 import 'package:proyectito/ejercicio7.dart';
 import 'package:proyectito/ejercicio8.dart';
+import 'package:proyectito/ejercicio9.dart';
 
 import 'NavDrawer.dart';
 import 'ejercicio4.dart';
@@ -37,6 +40,9 @@ class MyApp extends StatelessWidget {
         "/seis2": (context) => const Sixth2Route(),
         "/siete": (context) => const SeventhRoute(),
         "/ocho": (context) => const EighthRoute(),
+        "/nueve": (context) => const NinethRoute(),
+        "/diez": (context) => const TenthRoute(),
+        "/once": (context) => const EleventhRoute(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -59,7 +65,7 @@ class MyHomePage extends StatelessWidget {
         padding: EdgeInsets.all(30.0),
         child: Text(
           "Bienvenido a esta super app, para navegar entre los diferentes ejercicios despliege la barra lateral",
-          style: const TextStyle(fontFamily: 'Open Sans'),
+          style: const TextStyle(fontFamily: 'OpenSans'),
         ),
       )),
     );
