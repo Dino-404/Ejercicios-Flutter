@@ -9,18 +9,18 @@ class EighthRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MyStatefulWidget();
+    return EighthRouteLess();
   }
 }
 
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({super.key});
+class EighthRouteLess extends StatefulWidget {
+  const EighthRouteLess({super.key});
 
   @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
+  State<EighthRouteLess> createState() => _EighthRouteLess();
 }
 
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+class _EighthRouteLess extends State<EighthRouteLess> {
   int _counter = 0;
 
   void _incrementCounter() {

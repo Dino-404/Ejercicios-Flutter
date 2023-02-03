@@ -86,6 +86,16 @@ class NavDrawer extends StatelessWidget {
             title: Text('Undecimo ejercicio'),
             onTap: () => {Navigator.pushNamed(context, "/once")},
           ),
+          ListTile(
+            leading: Icon(Icons.android_rounded),
+            title: Text('Duodecimo ejercicio'),
+            onTap: () => {Navigator.pushNamed(context, "/doce")},
+          ),
+          ListTile(
+            leading: Icon(Icons.android_rounded),
+            title: Text('Decimotercero ejercicio'),
+            onTap: () => {Navigator.pushNamed(context, "/trece")},
+          ),
         ],
       ),
     );
